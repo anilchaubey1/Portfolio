@@ -1,36 +1,79 @@
-import { Briefcase, Navigation, Building } from "lucide-react"
+import { Briefcase, Navigation, Building,School } from "lucide-react"
 
 const Experience = () => {
   const experiences = [
     {
       role: "Visiting Professor",
-      institution: "Indian Institute of Technology (ISM), Dhanbad",
-      duration: "2020 - Present",
-      description: "Teaching advanced courses in Applied Geophysics and guiding research scholars.",
-      icon: <Building size={24} className="text-[#FFD700]" />,
+      institution: "Department of Applied Geophysics, IIT (ISM), Dhanbad",
+      duration: "10 Aug 2021 – Present",
+      description: "Teaching and guiding research in applied geophysics and marine geosciences.",
+      icon: <Building size={24} className="text-[#FFD700]" />
     },
     {
-      role: "Chief Scientist & Head, Marine Geophysics",
-      institution: "CSIR-National Institute of Oceanography, Goa",
-      duration: "2010 - 2020",
-      description: "Led major marine geophysical expeditions and research projects in the Indian Ocean.",
-      icon: <Navigation size={24} className="text-[#FFD700]" />,
+      role: "Consultant",
+      institution: "ESSO-NCPOR, Goa",
+      duration: "16 Jul 2020 – 09 Aug 2021",
+      description: "Provided expertise on polar and marine geophysical research programs.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
     },
     {
-      role: "Principal Scientist",
-      institution: "CSIR-National Institute of Oceanography, Goa",
-      duration: "2000 - 2010",
-      description: "Conducted research on marine geophysics and tectonics of the Indian Ocean region.",
-      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+      role: "Chief Scientist & Scientist-in-Charge",
+      institution: "CSIR-NIO, Regional Centre, Mumbai",
+      duration: "01 Apr 2015 – 31 Dec 2018",
+      description: "Oversaw regional marine geophysical operations and administrative leadership.",
+      icon: <Navigation size={24} className="text-[#FFD700]" />
     },
     {
-      role: "Scientist",
-      institution: "CSIR-National Institute of Oceanography, Goa",
-      duration: "1985 - 2000",
-      description: "Participated in numerous oceanographic expeditions and research cruises.",
-      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+      role: "Chief Scientist",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 2009 – 31 Mar 2015",
+      description: "Led national and international collaborative geophysical expeditions.",
+      icon: <Navigation size={24} className="text-[#FFD700]" />
     },
-  ]
+    {
+      role: "Scientist F",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 2004 – 29 Jul 2009",
+      description: "Advanced research on seabed morphology and tectonic processes.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
+      role: "Scientist EII",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 1999 – 29 Jul 2004",
+      description: "Marine geophysical data acquisition and tectonic studies.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
+      role: "Scientist EI",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 1994 – 29 Jul 1999",
+      description: "Participated in several oceanographic surveys and field research.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
+      role: "Scientist C",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 1989 – 29 Jul 1994",
+      description: "Contributed to marine gravity and magnetic data analysis.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
+      role: "Scientist B",
+      institution: "CSIR-NIO, Goa",
+      duration: "30 Jul 1984 – 29 Jul 1989",
+      description: "Worked on geophysical instrumentation and data processing.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
+      role: "Research Assistant",
+      institution: "University of Roorkee (Now IIT Roorkee)",
+      duration: "01 Sep 1983 – 25 Jun 1984",
+      description: "Assisted in research and teaching in applied geophysics.",
+      icon: <School size={24} className="text-[#FFD700]" />
+    }
+  ];
+  
 
   return (
     <section id="experience" className="section-container">

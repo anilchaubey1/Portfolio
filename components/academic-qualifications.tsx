@@ -4,27 +4,34 @@ import Image from "next/image"
 const AcademicQualifications = () => {
   const qualifications = [
     {
-      degree: "Ph.D. in Geophysics",
-      university: "Banaras Hindu University",
-      year: "1985",
+      degree: "Post-Doc",
+      university: "IUEM, Université de Bretagne Occidentale, Plouzané, France",
+      year: 2000,
+      details: "Marine Magnetic",
       icon: <GraduationCap size={24} className="text-[#FFD700]" />,
-      details: "Thesis on Marine Geophysics and Tectonics of the Indian Ocean",
     },
     {
-      degree: "M.Tech. in Applied Geophysics",
-      university: "Indian School of Mines (now IIT ISM), Dhanbad",
-      year: "1980",
+      degree: "Ph.D.",
+      university: "Goa University",
+      year: 1998,
+      details: "Marine Sciences",
       icon: <Award size={24} className="text-[#FFD700]" />,
-      details: "Specialized in Gravity and Magnetic methods",
     },
     {
-      degree: "B.Sc. (Hons) in Physics",
-      university: "Banaras Hindu University",
-      year: "1978",
+      degree: "M.Tech.",
+      university: "University of Roorkee (Now IIT, Roorkee)",
+      year: 1983,
+      details: "Applied Geophysics",
       icon: <School size={24} className="text-[#FFD700]" />,
-      details: "First Class with Distinction",
     },
-  ]
+    {
+      degree: "B.Sc.",
+      university: "Gorakhpur University",
+      year: 1979,
+      details: "Physics, Chemistry and Maths",
+      icon: <School size={24} className="text-[#FFD700]" />,
+    },
+  ]  
 
   return (
     <section id="qualifications" className="section-container relative overflow-hidden">

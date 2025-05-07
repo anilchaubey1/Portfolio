@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Layers, Globe, Ship, Users } from "lucide-react"
+import { Layers, Globe, Ship, Users, Star, Briefcase, BookOpenCheck, ClipboardList } from "lucide-react"
 import Image from "next/image"
 
 const Research = () => {
@@ -12,6 +12,10 @@ const Research = () => {
     { id: "tectonics", label: "Tectonics", icon: <Layers size={18} /> },
     { id: "indian", label: "Indian Ocean", icon: <Globe size={18} /> },
     { id: "collab", label: "Collaborations", icon: <Users size={18} /> },
+    { id: "ecs", label: "Extended Shelf", icon: <Star size={18} /> },
+    { id: "society", label: "Societal Impact", icon: <Briefcase size={18} /> },
+    { id: "r_and_d", label: "R&D", icon: <BookOpenCheck size={18} /> },
+    { id: "assignments", label: "Assignments", icon: <ClipboardList size={18} /> },
   ]
 
   const researchContent = {
@@ -27,10 +31,7 @@ const Research = () => {
             <li>Seismic profiling of the ocean floor</li>
             <li>Crustal structure studies of the Indian Ocean</li>
           </ul>
-          <p>
-            Developed new methodologies for marine geophysical data acquisition and interpretation, resulting in
-            significant advancements in understanding the geological evolution of the Indian Ocean.
-          </p>
+          <p>Developed new methodologies for marine geophysical data acquisition and interpretation, resulting in significant advancements in understanding the geological evolution of the Indian Ocean.</p>
         </div>
       ),
     },
@@ -46,10 +47,7 @@ const Research = () => {
             <li>The 85°E Ridge in the Bay of Bengal</li>
             <li>The Laxmi Ridge in the Arabian Sea</li>
           </ul>
-          <p>
-            Contributed to the understanding of plate tectonics in the Indian Ocean region through integrated
-            geophysical studies and tectonic reconstructions.
-          </p>
+          <p>Contributed to the understanding of plate tectonics in the Indian Ocean region through integrated geophysical studies and tectonic reconstructions.</p>
         </div>
       ),
     },
@@ -65,10 +63,7 @@ const Research = () => {
             <li>Studied the Bengal Fan and its sedimentary processes</li>
             <li>Investigated the impact of the 2004 Indian Ocean Tsunami</li>
           </ul>
-          <p>
-            Published landmark papers on the geological and geophysical aspects of the Indian Ocean, contributing
-            significantly to the global understanding of this ocean basin.
-          </p>
+          <p>Published landmark papers on the geological and geophysical aspects of the Indian Ocean, contributing significantly to the global understanding of this ocean basin.</p>
         </div>
       ),
     },
@@ -85,10 +80,68 @@ const Research = () => {
             <li>Japan Agency for Marine-Earth Science and Technology</li>
             <li>Indian Navy's Hydrographic Department</li>
           </ul>
-          <p>
-            These collaborations have resulted in joint expeditions, publications, and knowledge exchange programs,
-            enhancing the global understanding of marine geosciences.
-          </p>
+          <p>These collaborations have resulted in joint expeditions, publications, and knowledge exchange programs, enhancing the global understanding of marine geosciences.</p>
+        </div>
+      ),
+    },
+    ecs: {
+      title: "Extended Continental Shelf",
+      icon: <Star size={24} className="text-[#FFD700]" />,
+      content: (
+        <div>
+          <p className="mb-4">Key contributions to India's extended continental shelf project:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li>Led Arabian Sea Sector in geophysical data analysis and interpretation</li>
+            <li>Developed scientific basis for India's UN submission on ECS</li>
+            <li>Presented technical findings before CLCS at UN, New York</li>
+          </ul>
+          <p>Played a pivotal role in India’s claim of 0.6 million sq. km extended continental shelf under UN Convention.</p>
+        </div>
+      ),
+    },
+    society: {
+      title: "Societal Impact",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+      content: (
+        <div>
+          <p className="mb-4">Research contributions benefiting coastal communities and industries:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li>Investigated offshore hazards impacting coastal populations</li>
+            <li>Advised on coastal management and environmental protection</li>
+            <li>Supported projects for Power Grid Corp., NPCIL, and Sethusamudram Corp.</li>
+          </ul>
+          <p>Advanced applied geoscience for national development and safety.</p>
+        </div>
+      ),
+    },
+    r_and_d: {
+      title: "Scientific and Industrial R&D",
+      icon: <BookOpenCheck size={24} className="text-[#FFD700]" />,
+      content: (
+        <div>
+          <p className="mb-4">Significant R&D milestones:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li>Identified SDRs and depth anomalies in the Arabian Basin</li>
+            <li>Mapped ocean-continent boundaries along SW India</li>
+            <li>Explained seafloor features near 2004 Sumatra earthquake</li>
+            <li>Studied tectonics of Carlsberg Ridge</li>
+            <li>Trained students, Indian Navy officers, and international scholars</li>
+          </ul>
+        </div>
+      ),
+    },
+    assignments: {
+      title: "National & Institutional Assignments",
+      icon: <ClipboardList size={24} className="text-[#FFD700]" />,
+      content: (
+        <div>
+          <p className="mb-4">Major leadership and expert roles:</p>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li>Chairman & member of committees at CSIR-NIO</li>
+            <li>Member, MoES Program Advisory Committee</li>
+            <li>Expert roles in UPSC, NAAC, IIT Roorkee, Goa Univ.</li>
+          </ul>
+          <p>Contributed significantly to national science policy, technical recruitment, and academic evaluations.</p>
         </div>
       ),
     },
@@ -120,15 +173,15 @@ const Research = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <div className="p-3 bg-[#003865] rounded-full shadow-md hover-glow">
-                {researchContent[activeTab as keyof typeof researchContent].icon}
+                {researchContent[activeTab].icon}
               </div>
               <h3 className="ml-4 text-2xl font-bold text-[#003865]">
-                {researchContent[activeTab as keyof typeof researchContent].title}
+                {researchContent[activeTab].title}
               </h3>
             </div>
 
             <div className="pl-4 border-l-4 border-[#FFD700]">
-              {researchContent[activeTab as keyof typeof researchContent].content}
+              {researchContent[activeTab].content}
             </div>
           </div>
         </div>

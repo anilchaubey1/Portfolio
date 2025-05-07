@@ -1,33 +1,49 @@
-import { Compass, Waves, Mountain, Globe, Layers } from "lucide-react"
+import {  Waves, Globe, Layers,Activity,Landmark,ScanLine,Map, ShieldCheck} from "lucide-react"
 
 const Specialization = () => {
   const specializations = [
     {
       title: "Marine Geophysics",
       icon: <Waves size={24} className="text-[#FFD700]" />,
-      description: "Expert in marine geophysical surveys and interpretation of marine geophysical data.",
+      description: "Gravity, magnetic, and seismic methods applied in marine environments for geological and tectonic studies."
     },
     {
-      title: "Gravity and Magnetic Methods",
-      icon: <Compass size={24} className="text-[#FFD700]" />,
-      description: "Specialized in gravity and magnetic data acquisition, processing, and interpretation.",
-    },
-    {
-      title: "Tectonics",
-      icon: <Layers size={24} className="text-[#FFD700]" />,
-      description: "Research focus on tectonic evolution of the Indian Ocean and surrounding continental margins.",
-    },
-    {
-      title: "Oceanography",
+      title: "Continental Margins and EEZ",
       icon: <Globe size={24} className="text-[#FFD700]" />,
-      description: "Extensive experience in oceanographic research and expeditions.",
+      description: "Study of geological structures and resource potential along continental margins and Exclusive Economic Zones (EEZ)."
     },
     {
-      title: "Geophysical Exploration",
-      icon: <Mountain size={24} className="text-[#FFD700]" />,
-      description: "Applied geophysics for resource exploration and geological mapping.",
+      title: "Ocean-Floor Morphology and Tectonics",
+      icon: <Layers size={24} className="text-[#FFD700]" />,
+      description: "Research on ocean-floor features, plate tectonics, and seabed evolution in active and passive margins."
     },
-  ]
+    {
+      title: "Lithosphere and Spreading Regions",
+      icon: <Activity size={24} className="text-[#FFD700]" />,
+      description: "Analysis of lithospheric processes and dynamics in actively spreading oceanic regions."
+    },
+    {
+      title: "Archaeological Geophysics",
+      icon: <Landmark size={24} className="text-[#FFD700]" />,
+      description: "Application of geophysical techniques to explore and study submerged and coastal archaeological sites."
+    },
+    {
+      title: "Extended Continental Shelf Mapping",
+      icon: <Map size={24} className="text-[#FFD700]" />,
+      description: "Delimitation and mapping of the outer limits of the continental shelf under UNCLOS guidelines."
+    },
+    {
+      title: "High-Resolution Subsurface Imaging",
+      icon: <ScanLine size={24} className="text-[#FFD700]" />,
+      description: "Near-shore geophysical surveys for detailed imaging of subsurface features."
+    },
+    {
+      title: "Coastal Zone Management",
+      icon: <ShieldCheck size={24} className="text-[#FFD700]" />,
+      description: "Geospatial and geophysical support for sustainable coastal development and regulatory compliance."
+    }
+  ];
+  
 
   return (
     <section id="specialization" className="section-container">

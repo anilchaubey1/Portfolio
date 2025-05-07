@@ -3,34 +3,63 @@ import { Building, Briefcase } from "lucide-react"
 const Administrative = () => {
   const roles = [
     {
-      title: "Member, Academic Council",
-      institution: "IIT (ISM) Dhanbad",
-      duration: "2021 - Present",
-      description: "Contributing to academic policy decisions and curriculum development.",
-      icon: <Building size={24} className="text-[#FFD700]" />,
-    },
-    {
-      title: "Head, Marine Geophysics Division",
-      institution: "CSIR-National Institute of Oceanography",
-      duration: "2015 - 2020",
-      description: "Led a team of 25 scientists and technical staff, managed research projects worth over ₹20 crores.",
+      title: "In-Charge, Training and Placement",
+      institution: "Dept. of Applied Geophysics, IIT(ISM) Dhanbad",
+      duration: "July 2022 – Present",
+      description: "Overseeing student placement and industry interactions.",
       icon: <Briefcase size={24} className="text-[#FFD700]" />,
     },
     {
-      title: "Member, Research Advisory Committee",
-      institution: "Ministry of Earth Sciences",
-      duration: "2012 - 2018",
-      description: "Evaluated research proposals and monitored ongoing projects in marine sciences.",
+      title: "Member, DUGC & DPGC",
+      institution: "Dept. of Applied Geophysics, IIT(ISM) Dhanbad",
+      duration: "July 2022 – Present",
+      description: "Contributing to undergraduate and postgraduate academic governance.",
       icon: <Building size={24} className="text-[#FFD700]" />,
     },
     {
-      title: "Coordinator, Indo-German Marine Research Program",
-      institution: "CSIR-NIO & GEOMAR",
-      duration: "2010 - 2015",
-      description: "Coordinated joint research initiatives between Indian and German marine research institutions.",
+      title: "Chairman, Departmental Grievance Redressal Committee",
+      institution: "IIT(ISM) Dhanbad",
+      duration: "July 2022 – Present",
+      description: "Addressing and resolving departmental academic grievances.",
       icon: <Briefcase size={24} className="text-[#FFD700]" />,
     },
-  ]
+    {
+      title: "Scientist-in-Charge, Mumbai Regional Centre",
+      institution: "CSIR-NIO",
+      duration: "April 2015 – Dec 2018",
+      description: "Led regional scientific operations and coastal research activities.",
+      icon: <Building size={24} className="text-[#FFD700]" />,
+    },
+    {
+      title: "Decision Unit Leader, DU-74",
+      institution: "CSIR-NIO",
+      duration: "April 2015 – Dec 2018",
+      description: "Managed unit activities and coordinated marine research efforts.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+    },
+    {
+      title: "Project Leader – Marine Ecological Assessment",
+      institution: "CSIR-NIO",
+      duration: "April 2015 – Dec 2018",
+      description: "Led a project on sustainable coastal and shelf development on the west coast of India.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+    },
+    {
+      title: "Decision Unit Leader, DU-38 / DU-72",
+      institution: "CSIR-NIO",
+      duration: "Sept 2009 – March 2015",
+      description: "Directed research units focusing on seabed and geological studies.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+    },
+    {
+      title: "Project Leader – Marine Geo-scientific Applications",
+      institution: "CSIR-NIO",
+      duration: "Sept 2009 – March 2015",
+      description: "Led geological surveys of near-shore seabed and sub-seabed features across India.",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />,
+    },
+  ];
+  
 
   return (
     <section id="administrative" className="section-container">

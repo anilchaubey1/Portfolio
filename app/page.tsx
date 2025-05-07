@@ -8,7 +8,7 @@ import Teaching from "@/components/teaching"
 import Administrative from "@/components/administrative"
 import Memberships from "@/components/memberships"
 import Publications from "@/components/publications"
-import InternationalExposure from "@/components/international-exposure"
+// import InternationalExposure from "@/components/international-exposure"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Gallery from "@/components/gallery"
@@ -27,7 +27,7 @@ export default function Home() {
         <Administrative />
         <Memberships />
         <Publications />
-        <InternationalExposure />
+        {/* <InternationalExposure /> */}
         <Gallery />
         <Contact />
       </div>
