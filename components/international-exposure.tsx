@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { MapPin } from "lucide-react"
+import WorldMap from "./map"
 
 const InternationalExposure = () => {
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
@@ -31,11 +32,11 @@ const InternationalExposure = () => {
       </div>
 
       <div className="relative">
-        <div className="bg-white p-4 rounded-lg shadow-md mb-6">
-          <img
-            src="/placeholder.svg?height=200&width=800"
-            alt="World map with visited countries"
-            className="w-full h-auto rounded-lg"
+        <div className="bg-white p-4 rounded-lg h-[400px] shadow-md mb-6">
+          <WorldMap
+            // countries={countries}
+            // hoveredCountry={hoveredCountry}
+            // setHoveredCountry={setHoveredCountry}
           />
           <div className="absolute top-4 left-4 bg-white p-2 rounded-md shadow-md">
             <div className="flex items-center gap-2">
