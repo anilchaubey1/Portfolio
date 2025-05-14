@@ -47,7 +47,7 @@ const AcademicQualifications = () => {
               <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-[#003865] shadow-lg">
                 <Image
                   src="https://www.iitism.ac.in/storage/FacultyDetails/IMG_174065757567c053a7ec0ab.JPG"
-                  alt="Prof. Anil Kumar Chaubey"
+                  alt="Prof. Anil K. Chaubey"
                   width={192}
                   height={192}
                   className="w-full h-full object-cover"

@@ -45,7 +45,7 @@ const Navbar = () => {
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#FFD700]">
                 <Image
                   src="https://www.iitism.ac.in/storage/FacultyDetails/IMG_174065757567c053a7ec0ab.JPG"
-                  alt="Prof. Anil Kumar Chaubey"
+                  alt="Prof. Anil K. Chaubey"
                   width={40}
                   height={40}
                   className="w-full h-full object-cover"

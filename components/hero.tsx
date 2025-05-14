@@ -17,7 +17,7 @@ const Hero = () => {
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#FFD700] shadow-2xl relative z-10">
               <Image
                 src="https://www.iitism.ac.in/storage/FacultyDetails/IMG_174065757567c053a7ec0ab.JPG"
-                alt="Prof. Anil Kumar Chaubey"
+                alt="Prof. Anil K. Chaubey"
                 width={256}
                 height={256}
                 className="w-full h-full object-cover"
@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
 
           <div className="text-center md:text-left max-w-2xl">
-            <h1 className="text-white mb-4 font-serif text-4xl md:text-5xl">Prof. Anil Kumar Chaubey</h1>
+            <h1 className="text-white mb-4 font-serif text-4xl md:text-5xl">Prof. Anil K. Chaubey</h1>
 
             <div className="h-1 w-32 bg-[#FFD700] mx-auto md:mx-0 mb-6"></div>
 

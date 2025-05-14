@@ -15,13 +15,13 @@ const Footer = () => {
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#FFD700]">
                 <Image
                   src="https://www.iitism.ac.in/storage/FacultyDetails/IMG_174065757567c053a7ec0ab.JPG"
-                  alt="Prof. Anil Kumar Chaubey"
+                  alt="Prof. Anil K. Chaubey"
                   width={48}
                   height={48}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-[#FFD700]">Prof. Anil Kumar Chaubey</h3>
+              <h3 className="text-xl font-bold text-[#FFD700]">Prof. Anil K. Chaubey</h3>
             </div>
             <p className="mb-2">Visiting Professor</p>
             <p className="mb-2">Department of Applied Geophysics</p>
@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="mt-8 pt-6 border-t border-gray-700 text-center">
           <p>Made with ❤️ for academic excellence</p>
           <p className="text-sm mt-2">
-            &copy; {new Date().getFullYear()} Prof. Anil Kumar Chaubey. All rights reserved.
+            &copy; {new Date().getFullYear()} Prof. Anil K. Chaubey. All rights reserved.
           </p>
         </div>
       </div>

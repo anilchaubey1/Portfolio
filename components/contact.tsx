@@ -43,29 +43,30 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <Mail size={20} className="text-[#FFD700]" />
+                  <Mail size={20} className="text-[#280ed2]" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Email</h4>
-                  <p className="text-gray-600">professor.chaubey@iitism.ac.in</p>
-                  <p className="text-gray-600">akchaubey@nio.org</p>
+                  <p className="text-gray-600">chaubeyrcm@gmail.com </p>
+                  <p className="text-gray-600">akchaubey@iitism.ac.in 
+</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <Phone size={20} className="text-[#FFD700]" />
+                  <Phone size={20} className="text-[#052083]" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Phone</h4>
-                  <p className="text-gray-600">+91 98765 43210 (Office)</p>
-                  <p className="text-gray-600">+91 98765 12345 (Mobile)</p>
+                  <p className="text-gray-600"> ‪+91 326 223 5448 (Office)</p>
+                  <p className="text-gray-600">+918369289939 (Mobile)</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <MapPin size={20} className="text-[#FFD700]" />
+                  <MapPin size={20} className="text-[#0614a4]" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Office Address</h4>
@@ -77,11 +78,11 @@ const Contact = () => {
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <MapPin size={20} className="text-[#FFD700]" />
+                  <MapPin size={20} className="text-[#2409d3]" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Permanent Address</h4>
-                  <p className="text-gray-600">C-301, Oceanic Heights</p>
+                  <p className="text-gray-600">C-4,  La  Marvel Colony, Raj Bhawan Road</p>
                   <p className="text-gray-600">Dona Paula, Goa - 403004, India</p>
                 </div>
               </div>
