@@ -87,7 +87,7 @@ const Experience = () => {
               <div className="ml-4">
                 <h3 className="text-xl font-bold text-[#003865]">{exp.role}</h3>
                 <p className="text-lg font-medium">{exp.institution}</p>
-                <p className="text-[#FFD700] font-bold">{exp.duration}</p>
+                <p className="text-blue-900 font-bold">{exp.duration}</p>
                 <p className="text-gray-600">{exp.description}</p>
               </div>
             </div>

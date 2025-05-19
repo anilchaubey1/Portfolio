@@ -50,7 +50,7 @@ const AcademicQualifications = () => {
                   alt="Prof. Anil K. Chaubey"
                   width={192}
                   height={192}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-[#FFD700] rounded-full"></div>

@@ -48,7 +48,7 @@ const Navbar = () => {
                   alt="Prof. Anil K. Chaubey"
                   width={40}
                   height={40}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             )}

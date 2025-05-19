@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center py-20"
-      style={{
-        backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
-      }}
+      // style={{
+      //   backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+      // }}
     >
       <div className="absolute inset-0 bg-[#003865] opacity-80"></div>
 
@@ -20,7 +20,7 @@ const Hero = () => {
                 alt="Prof. Anil K. Chaubey"
                 width={256}
                 height={256}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="absolute -inset-1 bg-[#FFD700] opacity-20 rounded-full blur-md"></div>
