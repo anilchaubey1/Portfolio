@@ -194,7 +194,7 @@ const Research = () => {
                 alt="Prof. Anil K. Chaubey"
                 width={192}
                 height={192}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-4 right-12 w-24 h-24 bg-[#FFD700] opacity-10 rounded-full"></div>

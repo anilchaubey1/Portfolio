@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Prof. Anil Kumar Chaubey - IIT (ISM) Dhanbad",
+  title: "Prof. Anil K Chaubey - IIT (ISM) Dhanbad",
   description: "Professional portfolio of Prof. Anil Kumar Chaubey, Visiting Professor at IIT (ISM) Dhanbad",
     generator: 'v0.dev'
 }
