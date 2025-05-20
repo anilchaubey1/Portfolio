@@ -5,55 +5,63 @@ import type React from "react"
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import Image from "next/image"
+import img1 from "../public/Pic-1.jpg"
+import img2 from "../public/Pic-2.jpg"
+import img3 from "../public/Pic-3.jpg"
+import img4 from "../public/Pic-4.jpg"
+import img5 from "../public/Pic-5.jpg"
+import img6 from "../public/Pic-6.jpg"
+import img7 from "../public/Pic-7.jpg"
+import img8 from "../public/Pic-8.jpg"
 
 // Sample gallery images - these would be replaced with actual images
 const galleryImages = [
   {
     id: 1,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D1%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey during oceanographic expedition",
+    src: img1,
+    alt: "Honoured with the National Mineral Award (2002)",
     caption: "Honoured with the National Mineral Award (2002) by Hon’ble Shri Sis Ram Ola, Minister of Mines, Government of India, at a ceremony held in New Delhi in 2004.",
   },
   {
     id: 2,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D2%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey receiving National Geoscience Award",
+    src: img2,
+    alt: "Certificate of Recognition for Excellence – National Mineral Award (2002).",
     caption: "Certificate of Recognition for Excellence – National Mineral Award (2002).",
   },
   {
     id: 3,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D3%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey with research team",
-    caption: "Coordinated & organized the “Offshore Industrial Survey” training under the Long Hydrography (Long ‘H’) Specialization Course for the Naval officers from developing countries at CSIR-NIO, Goa.",
+    src: img3,
+    alt: "Coordinated & organized the “Offshore Industrial Survey”",
+    caption: "Coordinated & organized the “Offshore Industrial Survey” train  ing under the Long Hydrography (Long ‘H’) Specialization Course for the Naval officers from developing countries at CSIR-NIO, Goa.",
   },
   {
     id: 4,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D4%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
+    src: img4,
     alt: `Coordinated & organized the training programme for 44 auditors from 33 countries (deputed of the CAG of India) on "Environment Audit" at CSIR-NIO, Goa.`,
     caption: `Coordinated & organized the training programme for 44 auditors from 33 countries (deputed of the CAG of India) on "Environment Audit" at CSIR-NIO, Goa.`,
   },
   {
     id: 5,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D5%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey at international conference",
+    src: img5,
+    alt: "Scientific deliberation on an Indo-French collaborative project, awarded by the Indo-French Centre for the Promotion of Advanced Research (IFCPAR), held at CSIR-NIO, Goa.",
     caption: "Scientific deliberation on an Indo-French collaborative project, awarded by the Indo-French Centre for the Promotion of Advanced Research (IFCPAR), held at CSIR-NIO, Goa.",
   },
   {
     id: 6,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D6%2Ejpg&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey aboard research vessel",
+    src: img6,
+    alt: "Snapshot of the scientific deliberation group at the Singapore Convention Centre during the conference proceedings.",
     caption: "Snapshot of the scientific deliberation group at the Singapore Convention Centre during the conference proceedings.",
   },
   {
     id: 7,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D7%2Ejpg&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey at IIT ISM Dhanbad",
+    src: img7,
+    alt: "Photograph captured during the workshop on Natural Hazards and Coastal Processes of the Indian Coast at CSIR-NIO Regional Centre, Visakhapatnam.",
     caption: "Photograph captured during the workshop on Natural Hazards and Coastal Processes of the Indian Coast at CSIR-NIO Regional Centre, Visakhapatnam.",
   },
   {
     id: 8,
-    src: "https://indianinstituteoftechnol299-my.sharepoint.com/personal/akchaubey_iitism_ac_in/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab%2FPic%2D8%2EJPG&parent=%2Fpersonal%2Fakchaubey%5Fiitism%5Fac%5Fin%2FDocuments%2FWebsite%20matter%2FWeb%20photo%20for%20Arnab",
-    alt: "Prof. Chaubey conducting field work",
+    src: img8,
+    alt: "Candid photo during a break in the ‘Tessera-2D’ refraction data modeling training at Tesseral Technologies, Calgary.",
     caption: "Candid photo during a break in the ‘Tessera-2D’ refraction data modeling training at Tesseral Technologies, Calgary.",
   },
 ]
