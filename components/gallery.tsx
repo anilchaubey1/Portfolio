@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import Image from "next/image"
 
 // Sample gallery images - these would be replaced with actual images
 const galleryImages = [
