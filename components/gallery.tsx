@@ -5,62 +5,58 @@ import type React from "react"
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import Image from "next/image"
-import img1 from "../assets/Pic-1.jpg"
-import img2 from "../assets/Pic-2.jpg"
-import img3 from "../assets/Pic-3.jpg"
-import img4 from "../assets/Pic-4.jpg"
-import img5 from "../assets/Pic-5.jpg"
-import img6 from "../assets/Pic-6.jpg"
-import img7 from "../assets/Pic-7.jpg"
-import img8 from "../assets/Pic-8.jpg"
+
+
+
 
 // Sample gallery images - these would be replaced with actual images
+
 const galleryImages = [
   {
     id: 1,
-    src: img1,
+    src: '/assets/Pic-1.jpg',
     alt: "Honoured with the National Mineral Award (2002)",
     caption: "Honoured with the National Mineral Award (2002) by Hon’ble Shri Sis Ram Ola, Minister of Mines, Government of India, at a ceremony held in New Delhi in 2004.",
   },
   {
     id: 2,
-    src: img2,
+    src: '/assets/Pic-2.jpg',
     alt: "Certificate of Recognition for Excellence – National Mineral Award (2002).",
     caption: "Certificate of Recognition for Excellence – National Mineral Award (2002).",
   },
   {
     id: 3,
-    src: img3,
+    src: '/assets/Pic-3.jpg',  
     alt: "Coordinated & organized the “Offshore Industrial Survey”",
     caption: "Coordinated & organized the “Offshore Industrial Survey” train  ing under the Long Hydrography (Long ‘H’) Specialization Course for the Naval officers from developing countries at CSIR-NIO, Goa.",
   },
   {
     id: 4,
-    src: img4,
+    src:'/assets/Pic-4.jpg',
     alt: `Coordinated & organized the training programme for 44 auditors from 33 countries (deputed of the CAG of India) on "Environment Audit" at CSIR-NIO, Goa.`,
     caption: `Coordinated & organized the training programme for 44 auditors from 33 countries (deputed of the CAG of India) on "Environment Audit" at CSIR-NIO, Goa.`,
   },
   {
     id: 5,
-    src: img5,
+    src: '/assets/Pic-5.jpg',
     alt: "Scientific deliberation on an Indo-French collaborative project, awarded by the Indo-French Centre for the Promotion of Advanced Research (IFCPAR), held at CSIR-NIO, Goa.",
     caption: "Scientific deliberation on an Indo-French collaborative project, awarded by the Indo-French Centre for the Promotion of Advanced Research (IFCPAR), held at CSIR-NIO, Goa.",
   },
   {
     id: 6,
-    src: img6,
+    src: '/assets/Pic-6.jpg',
     alt: "Snapshot of the scientific deliberation group at the Singapore Convention Centre during the conference proceedings.",
     caption: "Snapshot of the scientific deliberation group at the Singapore Convention Centre during the conference proceedings.",
   },
   {
     id: 7,
-    src: img7,
+    src: '/assets/Pic-7.jpg',
     alt: "Photograph captured during the workshop on Natural Hazards and Coastal Processes of the Indian Coast at CSIR-NIO Regional Centre, Visakhapatnam.",
     caption: "Photograph captured during the workshop on Natural Hazards and Coastal Processes of the Indian Coast at CSIR-NIO Regional Centre, Visakhapatnam.",
   },
   {
     id: 8,
-    src: img8,
+    src: '/assets/Pic-8.jpg',
     alt: "Candid photo during a break in the ‘Tessera-2D’ refraction data modeling training at Tesseral Technologies, Calgary.",
     caption: "Candid photo during a break in the ‘Tessera-2D’ refraction data modeling training at Tesseral Technologies, Calgary.",
   },
