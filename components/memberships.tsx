@@ -20,16 +20,7 @@ const Memberships = () => {
       logo: "/placeholder.svg?height=80&width=80",
       status: "Member since 1985",
     },
-    {
-      name: "Indian Society of Applied Geochemists (ISAG)",
-      logo: "/placeholder.svg?height=80&width=80",
-      status: "Member",
-    },
-    {
-      name: "International Union of Geodesy and Geophysics (IUGG)",
-      logo: "/placeholder.svg?height=80&width=80",
-      status: "Member",
-    },
+        
   ]
 
   return (
