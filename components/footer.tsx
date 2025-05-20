@@ -18,7 +18,7 @@ const Footer = () => {
                   alt="Prof. Anil K. Chaubey"
                   width={48}
                   height={48}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <h3 className="text-xl font-bold text-[#FFD700]">Prof. Anil K. Chaubey</h3>
