@@ -79,7 +79,6 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-gray-700 text-center">
-          <p>Made with ❤️ for academic excellence</p>
           <p className="text-sm mt-2">
             &copy; {new Date().getFullYear()} Prof. Anil K. Chaubey. All rights reserved.
           </p>
