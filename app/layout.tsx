@@ -27,7 +27,8 @@ export default function RootLayout({
 }) {
   return (
   <html lang="en" className="scroll-smooth">
-    <head>
+      <head>
+      <meta name="google-site-verification" content="M-qoF0SBTs0M3NAsRoKxSP32nx392vL2bzlwmZsO7Sw" />
       <meta name="robots" content="index, follow" />
       <meta property="og:title" content="Prof. Anil K Chaubey - IIT (ISM) Dhanbad" />
       <meta property="og:description" content="Professional portfolio of Prof. Anil Kumar Chaubey, Visiting Professor at IIT (ISM) Dhanbad" />
