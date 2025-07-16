@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://portfolio-ak-chaubey.vercel.app/sitemap.xml
+Sitemap: https://akchaubey-portfolio.vercel.app//sitemap.xml
