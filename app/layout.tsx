@@ -32,11 +32,10 @@ export default function RootLayout({
       <meta name="robots" content="index, follow" />
       <meta property="og:title" content="Prof. Anil K Chaubey - IIT (ISM) Dhanbad" />
       <meta property="og:description" content="Professional portfolio of Prof. Anil Kumar Chaubey, Visiting Professor at IIT (ISM) Dhanbad" />
-      <meta property="og:url" content="https://portfoilio-ak-chaubey.vercel.app/" />
+      <meta property="og:url" content="https://portfolio-ak-chaubey.vercel.app/" />
       <meta property="og:type" content="website" />
       <link rel="canonical" href="https://portfoilio-ak-chaubey.vercel.app/" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="google-site-verification" content="M-qoF0SBTs0M3NAsRoKxSP32nx392vL2bzlwmZsO7Sw" />
     </head>
     <body className={`${merriweather.variable} ${openSans.variable}`}>
       <Navbar />
