@@ -23,9 +23,10 @@ const Footer = () => {
               </div>
               <h3 className="text-xl font-bold text-[#FFD700]">Prof. Anil K. Chaubey</h3>
             </div>
-            <p className="mb-2">Visiting Professor</p>
-            <p className="mb-2">Department of Applied Geophysics</p>
-            <p>Indian Institute of Technology (ISM), Dhanbad</p>
+            <p className="mb-1">Consultant, Department of Continental Shelf Studies,</p>
+            <p className="mb-1">National Centre for Polar and Ocean Research,</p>
+            <p className="mb-1">(Ministry of Earth Sciences, Government of India),</p>
+            <p className="mb-4">Headland Sada, Vasco-da-Gama, Goa 403804</p>
           </div>
 
           <div>

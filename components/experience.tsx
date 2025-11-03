@@ -3,9 +3,16 @@ import { Briefcase, Navigation, Building,School } from "lucide-react"
 const Experience = () => {
   const experiences = [
     {
+      role: "Consultant",
+      institution: "Department of Continental Shelf Studies, NCPOR, Vasco-da-Gama, Goa",
+      duration: "17 Jul 2025 – Present",
+      description: "Assisting in gathering and analyzing scientific data to support claims for extending nation's continental shelf beyond 200 nautical miles, ensuring compliance with the legal and technical criteria set by the Commission on the Limits of the Continental Shelf (CLCS).",
+      icon: <Briefcase size={24} className="text-[#FFD700]" />
+    },
+    {
       role: "Visiting Professor",
       institution: "Department of Applied Geophysics, IIT (ISM), Dhanbad",
-      duration: "10 Aug 2021 – Present",
+      duration: "10 Aug 2021 – 30 Jun 2025",
       description: "Teaching and guiding research in applied geophysics and marine geosciences.",
       icon: <Building size={24} className="text-[#FFD700]" />
     },

@@ -34,11 +34,18 @@ const Hero = () => {
             <div className="h-1 w-32 bg-[#FFD700] mx-auto md:mx-0 mb-6"></div>
 
             <h2 className="text-white text-xl md:text-2xl mb-6 font-serif">
-              Visiting Professor, Department of Applied Geophysics
+              Consultant, Department of Continental Shelf Studies,
             </h2>
 
+            <h3 className="text-white text-lg md:text-xl font-serif">
+              National Centre for Polar and Ocean Research,
+            </h3>
+
+            <h3 className="text-white text-lg md:text-xl font-serif">
+              (Ministry of Earth Sciences, Government of India),
+            </h3>
             <h3 className="text-white text-lg md:text-xl mb-8 font-serif">
-              Indian Institute of Technology (ISM), Dhanbad
+              Headland Sada, Vasco-da-Gama, Goa 403804
             </h3>
 
             <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 mb-8">
