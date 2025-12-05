@@ -11,7 +11,6 @@ const Research = () => {
     { id: "marine", label: "Marine Geophysics", icon: <Ship size={18} /> },
     { id: "tectonics", label: "Tectonics", icon: <Layers size={18} /> },
     { id: "indian", label: "Indian Ocean", icon: <Globe size={18} /> },
-    { id: "collab", label: "Collaborations", icon: <Users size={18} /> },
     { id: "ecs", label: "Extended Shelf", icon: <Star size={18} /> },
     { id: "society", label: "Societal Impact", icon: <Briefcase size={18} /> },
     { id: "r_and_d", label: "R&D", icon: <BookOpenCheck size={18} /> },
@@ -170,7 +169,7 @@ const Research = () => {
             ))}
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          {/* <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <div className="p-3 bg-[#003865] rounded-full shadow-md hover-glow">
                 {researchContent[activeTab].icon}
@@ -183,7 +182,7 @@ const Research = () => {
             <div className="pl-4 border-l-4 border-[#FFD700]">
               {researchContent[activeTab].content}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hidden md:block">

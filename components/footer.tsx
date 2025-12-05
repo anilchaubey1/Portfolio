@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Mail, Phone, MapPin } from "lucide-react"
-import Image from "next/image"
+import Link from "next/link";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -21,39 +21,64 @@ const Footer = () => {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <h3 className="text-xl font-bold text-[#FFD700]">Prof. Anil K. Chaubey</h3>
+              <h3 className="text-xl font-bold text-[#FFD700]">
+                Prof. Anil K. Chaubey
+              </h3>
             </div>
-            <p className="mb-1">Consultant, Department of Continental Shelf Studies,</p>
-            <p className="mb-1">National Centre for Polar and Ocean Research,</p>
-            <p className="mb-1">(Ministry of Earth Sciences, Government of India),</p>
+            <p className="mb-1">
+              Consultant, Department of Continental Shelf Studies,
+            </p>
+            <p className="mb-1">
+              National Centre for Polar and Ocean Research,
+            </p>
+            <p className="mb-1">
+              (Ministry of Earth Sciences, Government of India),
+            </p>
             <p className="mb-4">Headland Sada, Vasco-da-Gama, Goa 403804</p>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4 text-[#FFD700]">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4 text-[#FFD700]">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-[#FFD700] transition-colors">
+                <Link
+                  href="#"
+                  className="hover:text-[#FFD700] transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#qualifications" className="hover:text-[#FFD700] transition-colors">
+                <Link
+                  href="#qualifications"
+                  className="hover:text-[#FFD700] transition-colors"
+                >
                   Qualifications
                 </Link>
               </li>
               <li>
-                <Link href="#research" className="hover:text-[#FFD700] transition-colors">
+                <Link
+                  href="#research"
+                  className="hover:text-[#FFD700] transition-colors"
+                >
                   Research
                 </Link>
               </li>
               <li>
-                <Link href="#publications" className="hover:text-[#FFD700] transition-colors">
+                <Link
+                  href="#publications"
+                  className="hover:text-[#FFD700] transition-colors"
+                >
                   Publications
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-[#FFD700] transition-colors">
+                <Link
+                  href="#contact"
+                  className="hover:text-[#FFD700] transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -61,7 +86,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-4 text-[#FFD700]">Contact Information</h3>
+            <h3 className="text-xl font-bold mb-4 text-[#FFD700]">
+              Contact Information
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail size={18} className="text-[#FFD700] mr-2" />
@@ -72,8 +99,12 @@ const Footer = () => {
                 <span>+91 8369289939</span>
               </li>
               <li className="flex items-start">
-                <MapPin size={18} className="text-[#FFD700] mr-2 mt-1" />
-                <span>Department of Applied Geophysics, IIT (ISM), Dhanbad, Jharkhand - 826004, India</span>
+                <MapPin size={32} className="text-[#FFD700] mr-2 mt-0" />
+                <span>
+                  National Centre for Polar and Ocean Research, (Ministry of
+                  Earth Sciences, Government of India), Headland Sada,
+                  Vasco-da-Gama, Goa 403804
+                </span>
               </li>
             </ul>
           </div>
@@ -81,12 +112,13 @@ const Footer = () => {
 
         <div className="mt-8 pt-6 border-t border-gray-700 text-center">
           <p className="text-sm mt-2">
-            &copy; {new Date().getFullYear()} Prof. Anil K. Chaubey. All rights reserved.
+            &copy; {new Date().getFullYear()} Prof. Anil K. Chaubey. All rights
+            reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <Mail size={20} className="text-[#280ed2]" />
+                  <Mail size={20} className="text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Email</h4>
@@ -55,30 +55,30 @@ const Contact = () => {
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <Phone size={20} className="text-[#052083]" />
+                  <Phone size={20} className="text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Phone</h4>
-                  <p className="text-gray-600"> ‪+91 326 223 5448 (Office)</p>
+                  <p className="text-gray-600"> [U+202A]+91 326 223 5448 (Office)</p>
                   <p className="text-gray-600">+918369289939 (Mobile)</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <MapPin size={20} className="text-[#0614a4]" />
+                  <MapPin size={20} fill="" className="text-white " />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Office Address</h4>
-                  <p className="text-gray-600">Department of Applied Geophysics</p>
-                  <p className="text-gray-600">Indian Institute of Technology (ISM)</p>
-                  <p className="text-gray-600">Dhanbad, Jharkhand - 826004, India</p>
+                  <p className="text-gray-600">National Centre for Polar and Ocean Research,</p>
+                  <p className="text-gray-600">(Ministry of Earth Sciences, Government of India),</p>
+                  <p className="text-gray-600">Headland Sada, Vasco-da-Gama, Goa 403804</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="p-2 bg-[#003865] rounded-full">
-                  <MapPin size={20} className="text-[#2409d3]" />
+                  <MapPin size={20} className="text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-bold text-[#003865]">Permanent Address</h4>
