@@ -12,23 +12,45 @@ const Contact = () => {
     subject: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message. Prof. Chaubey will get back to you soon.")
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgvgzzag", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -169,9 +191,25 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="flex items-center justify-center gap-2 w-full primary-btn py-3">
+            {submitStatus === "success" && (
+              <div className="p-4 bg-green-50 border border-green-200 rounded-md text-green-800">
+                Thank you for your message! Prof. Chaubey will get back to you soon.
+              </div>
+            )}
+
+            {submitStatus === "error" && (
+              <div className="p-4 bg-red-50 border border-red-200 rounded-md text-red-800">
+                Sorry, there was an error sending your message. Please try again or contact directly via email.
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="flex items-center justify-center gap-2 w-full primary-btn py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
               <Send size={18} />
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>

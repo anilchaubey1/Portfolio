@@ -169,7 +169,7 @@ const Research = () => {
             ))}
           </div>
 
-          {/* <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <div className="p-3 bg-[#003865] rounded-full shadow-md hover-glow">
                 {researchContent[activeTab].icon}
@@ -182,7 +182,7 @@ const Research = () => {
             <div className="pl-4 border-l-4 border-[#FFD700]">
               {researchContent[activeTab].content}
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="hidden md:block">
