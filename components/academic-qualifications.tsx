@@ -4,7 +4,7 @@ import Image from "next/image"
 const AcademicQualifications = () => {
   const qualifications = [
     {
-      degree: "Post-Doctorate",
+      degree: "Post-Doc.",
       university: "IUEM, Université de Bretagne Occidentale, Plouzané, France",
       year: 2000,
       details: "Marine Magnetic",
